@@ -50,10 +50,10 @@ Must be ${slideNum} slides long and each content array should have ${bulletMin}-
 #Example of Usage
 
 ## Entering Input
-![alt text](https://github.com/ProgrammerSteve/powerpointWithChatGpt/blob/image3.jpg?raw=true "input")
+![alt text](https://github.com/ProgrammerSteve/powerpointWithChatGpt/image3.jpg?raw=true "input")
 
 ## Folder created
-![alt text](https://github.com/ProgrammerSteve/powerpointWithChatGpt/blob/image2.jpg?raw=true "folder")
+![alt text](https://github.com/ProgrammerSteve/powerpointWithChatGpt/image2.jpg?raw=true "folder")
 
 ## Viewing the powerpoint
-![alt text](https://github.com/ProgrammerSteve/powerpointWithChatGpt/blob/image1.jpg?raw=true "powerpoint")
+![alt text](https://github.com/ProgrammerSteve/powerpointWithChatGpt/image1.jpg?raw=true "powerpoint")
