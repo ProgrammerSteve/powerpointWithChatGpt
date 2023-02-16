@@ -5,8 +5,7 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node script.js",
-    "chat": "node chatGpt.js"
+    "start": "node script.js"
   },
   "keywords": [],
   "author": "",

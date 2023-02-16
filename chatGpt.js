@@ -5,7 +5,9 @@ async function callGpt(
   slideNum = 6,
   bulletMin = 3,
   bulletMax = 5,
-  extra = ""
+  extra = "",
+  temperature = 0.2,
+  max_tokens = 500
 ) {
   const configuration = new Configuration({
     apiKey: process.env.API_KEY,
@@ -30,8 +32,8 @@ Must be ${slideNum} slides long and each content array should have ${bulletMin}-
     const completion = await openai.createCompletion({
       model: "text-davinci-003",
       prompt: prompt,
-      temperature: 0.2,
-      max_tokens: 500,
+      temperature: temperature,
+      max_tokens: max_tokens,
     });
     let resp = completion.data.choices[0].text;
     powerpoint = JSON.parse(resp.replace("\n", ""));

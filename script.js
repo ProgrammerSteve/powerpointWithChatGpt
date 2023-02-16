@@ -7,6 +7,8 @@ const extra = "talk about Reactjs specifically";
 let slideNum = 6;
 let bulletMin = 3;
 let bulletMax = 5;
+let temperature = 0.2;
+let max_tokens = 500;
 
 async function generatePowerPoint(
   topic,
@@ -15,7 +17,15 @@ async function generatePowerPoint(
   bulletMax,
   extra
 ) {
-  let powerpoint = await callGpt(topic, slideNum, bulletMin, bulletMax, extra);
+  let powerpoint = await callGpt(
+    topic,
+    slideNum,
+    bulletMin,
+    bulletMax,
+    extra,
+    temperature,
+    max_tokens
+  );
   let pres = new pptxgen();
   let titleSlideRef = pres.addSlide();
   titleSlideRef.addText(powerpoint.title, {
@@ -60,4 +70,12 @@ async function generatePowerPoint(
     console.log("error:", err);
   }
 }
-generatePowerPoint(topic, slideNum, bulletMin, bulletMax, extra);
+generatePowerPoint(
+  topic,
+  slideNum,
+  bulletMin,
+  bulletMax,
+  extra,
+  temperature,
+  max_tokens
+);
