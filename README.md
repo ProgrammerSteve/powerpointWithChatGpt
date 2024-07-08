@@ -1,4 +1,7 @@
-# Requirements
+# Note:
+- OpenAI has deprecated the "text-davinci-003" model and can't be used anymore
+
+## Requirements
 - An openai account
 - tokens to use ChatGPT
 
